@@ -1,0 +1,105 @@
+[
+  {
+    "propertyName": "Choose String Type",
+    "type": "StringType",
+    "pii": true,
+    "sensitive": true,
+    "description": "Lakshay@Gmail.com",
+    "stringType": {
+      "sample": "Automation Testing",
+      "propertyType": "String"
+    },
+    "informationType": {
+      "mustBeUnique": true,
+      "allowNull": false,
+      "defaultIsNull" : true
+    },
+    "anEnum": {
+      "enumValue": ["VN", "UK", "USA", "USD"]
+    },
+    "defaultValue": "VN",
+    "faker": "zipCode",
+    "describeStringData":{
+      "format": "Byte - base64 encoded characters",
+      "stringMinimumLength" : 1,
+      "stringMaximumLength": 100,
+      "patternRegularExpression": "arn:[\\w+=/,.@-]+:[\\w+=/,.@-]+:[\\w+=/,.@-]*:[0-9]*:[\\w+=,.@-]+(/[\\w+=/,.@-]+)*",
+      "description": "Hallo"
+    }
+  },
+  {
+    "propertyName": "Choose Integer Type",
+    "type": "IntegerType",
+    "pii": true,
+    "sensitive": true,
+    "description": "Lakshay@Gmail.com",
+    "integerType": {
+      "sample": "10",
+      "propertyType": "Integer"
+    },
+    "informationType": {
+      "mustBeUnique": true,
+      "allowNull": false,
+      "defaultIsNull" : true
+    },
+    "anEnum": {
+      "enumValue": ["VN", "UK", "USA", "USD"]
+    },
+    "defaultValue": "VN",
+    "faker": "city",
+    "describeIntegerData":{
+      "format": "Integer - signed 32 bits",
+      "minimumValue" : 1,
+      "MaximumValue": 100,
+      "valueIsAMultipleOf": 5
+    }
+  },
+  {
+    "propertyName": "Choose Boolean Type",
+    "type": "BooleanType",
+    "pii": true,
+    "sensitive": true,
+    "description": "Lakshay@Gmail.com",
+    "stringType": {
+      "sample": "true",
+      "propertyType": "Boolean"
+    },
+    "informationType": {
+      "mustBeUnique": true,
+      "allowNull": false,
+      "defaultIsNull" : true
+    },
+    "anEnum": {
+      "enumValue": ["VN", "UK", "USA", "USD"]
+    },
+    "defaultValue": "VN",
+    "faker": "zipCode"
+  },
+  {
+    "propertyName": "Choose Number Type",
+    "type": "NumberType",
+    "pii": true,
+    "sensitive": true,
+    "description": "Lakshay@Gmail.com",
+    "integerType": {
+      "sample": "11",
+      "propertyType": "Number"
+    },
+    "informationType": {
+      "mustBeUnique": true,
+      "allowNull": false,
+      "defaultIsNull" : true
+    },
+    "anEnum": {
+      "enumValue": ["VN", "UK", "USA", "USD"]
+    },
+    "defaultValue": "VN",
+    "faker": "zipCode",
+    "describeIntegerData":{
+      "format": "Float",
+      "minimumValue" : 1,
+      "MaximumValue": 100,
+      "valueIsAMultipleOf": 5
+    }
+  }
+]

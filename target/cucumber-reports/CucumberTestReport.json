@@ -1,0 +1,240 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8055188,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 6250353290,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.beforeSteps(Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "The user searches name",
+        "description": "",
+        "id": "users-function;the-user-searches-name;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 13018129,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 202388888,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.afterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 227978784,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open the users page",
+            "match": {
+              "location": "UsersSteps.iOpenTheUsersPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 281544299,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter the name \"John Doe\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "John Doe",
+                  "offset": 18
+                }
+              ],
+              "location": "UsersSteps.iEnterTheName(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1930894,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I Click the Search Button",
+            "match": {
+              "location": "UsersSteps.iClickTheSearchButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 173960486,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The user should be returned",
+            "match": {
+              "location": "UsersSteps.theUserShouldBeReturned()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Users"
+          },
+          {
+            "line": 7,
+            "name": "@SearchUserPage"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1890717,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4069191576,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.beforeSteps(Scenario)"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "The user creates new user",
+        "description": "",
+        "id": "users-function;the-user-creates-new-user",
+        "after": [
+          {
+            "result": {
+              "duration": 542741804,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 196144970,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.afterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 132934,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I open the users page",
+            "match": {
+              "location": "UsersSteps.iOpenTheUsersPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 290132325,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I click Add User Button",
+            "match": {
+              "location": "UsersSteps.iClickAddUserButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1553394287,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I add new user",
+            "match": {
+              "location": "UsersSteps.iAddNewUser()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1589384,
+              "error_message": "java.lang.AssertionError: expected [firstName] but found [John Doe]\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:135)\n\tat org.testng.Assert.assertEquals(Assert.java:116)\n\tat org.testng.Assert.assertEquals(Assert.java:190)\n\tat org.testng.Assert.assertEquals(Assert.java:200)\n\tat suite.stepdefs.UsersSteps.iVerifyTheUserAdded(UsersSteps.java:48)\n\tat ✽.And I verify the user added(Users.feature:23)\n",
+              "status": "failed"
+            },
+            "line": 23,
+            "name": "I verify the user added",
+            "match": {
+              "location": "UsersSteps.iVerifyTheUserAdded()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@CreateNewUser"
+          }
+        ]
+      }
+    ],
+    "name": "Users Function",
+    "description": "In order to avoid silly mistakes\r\nAs a math idiot\r\nI want to be told the sum of two numbers",
+    "id": "users-function",
+    "keyword": "Feature",
+    "uri": "Users.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Users"
+      }
+    ]
+  }
+]

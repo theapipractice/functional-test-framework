@@ -1,0 +1,150 @@
+#flowchart {
+        width: 580px;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: .8em;
+        margin: auto;
+    }
+    #flowchart a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 2em 1em;
+
+            word-break: break-all;
+        }
+    .no1 {
+      width: 100px;
+          height: 64px;
+          background: #ffbc00;
+          border-radius: 100px / 50px;
+          margin-left: 48px;
+    }
+
+    .no2 {
+              width: 100px;
+              height: 64px;
+              background: red;
+              border-radius: 100px / 50px;
+              margin-left: 168px;
+              margin-top: -68px;
+        }
+
+    .line1 {
+        width: 3px;
+            height: 20px;
+            background-color: #000;
+            margin: 5px 410px 12px 94px;
+    }
+    .clear {
+        clear:both;
+    }
+
+        .diamond1 {
+          width: 0;
+          height: 0;
+          border: 50px solid transparent;
+          border-bottom-color: #f5a835;
+          position: relative;
+          top: -50px;
+          margin-left:45px;
+        }
+        .diamond1:after {
+          content: '';
+          position: absolute;
+          left: -50px;
+          top: 50px;
+          width: 0;
+          height: 0;
+          border: 50px solid transparent;
+          border-top-color: #f5a835;
+        }
+
+
+         .diamond2 {
+                  width: 0;
+                  height: 0;
+                  border: 50px solid transparent;
+                  border-bottom-color: #f5a835;;
+                  position: relative;
+                  top: -50px;
+                  margin-left:45px;
+                }
+                .diamond2:after {
+                  content: '';
+                  position: absolute;
+                  left: -50px;
+                  top: 50px;
+                  width: 0;
+                  height: 0;
+                  border: 50px solid transparent;
+                  border-top-color: #f5a835;;
+                }
+
+            .diamond-narrow {
+              width: 0;
+              height: 0;
+              border: 50px solid transparent;
+              border-bottom: 70px solid red;
+              position: relative;
+              top: -50px;
+               margin-left:45px;
+            }
+            .diamond-narrow:after {
+              content: '';
+              position: absolute;
+              left: -50px;
+              top: 70px;
+              width: 0;
+              height: 0;
+              border: 50px solid transparent;
+              border-top: 70px solid red;
+            }
+
+             .rectangle1 {
+                  width: 200px;
+                  height: 76px;
+                  background: #35f53b;
+                }
+
+                .rectangle2 {
+                                  width: 200px;
+                                  height: 76px;
+                                  background: red;
+                                }
+
+
+
+i {
+  border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+      margin: 18px -5px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin: -3px 100px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.h_line {  width: 300%;
+               height: 2px;
+               background: #0a0a0a;
+               margin-left: 72px; }

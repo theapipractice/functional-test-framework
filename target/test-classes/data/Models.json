@@ -1,0 +1,83 @@
+[
+  {
+    "modelName": "New Model Name",
+    "type": "objectType",
+    "defaultModelKey": "Automation",
+    "modelType": "Object",
+    "description": "Create new model automatically",
+    "modelDescribeData": {
+      "minProperties": "1",
+      "maxProperties": "5",
+      "additionalProperties": true,
+      "uniqueItem" : true,
+      "allowNull": true,
+      "defaultIsNull": true
+    },
+    "properties": {
+      "enumValue": ["stt:Number","name:String", "age:Integer", "available:Boolean"]
+    },
+    "modelDescribeDataStringType":{
+      "format": "Byte - base64 encoded characters",
+      "personallyIdentifiableInformation": true,
+      "sensitiveInformation": true,
+      "stringMinimumLength" : "1",
+      "uniqueIdentifier":true,
+      "allowNull":false,
+      "stringMaximumLength": "100",
+      "defaultDesData": "Automation",
+      "defaultIsNull" : false,
+      "patternRegularExpression": "arn:[\\w+=/,.@-]+:[\\w+=/,.@-]+:[\\w+=/,.@-]*:[0-9]*:[\\w+=,.@-]+(/[\\w+=/,.@-]+)*",
+      "description": "using automation scripts",
+      "faker": "zipCode",
+      "enumValue": ["VN", "UK", "USA", "USD"]
+    },
+    "modelDescribeDataIntegerType":{
+      "format": "Integer - signed 32 bits",
+      "personallyIdentifiableInformation": true,
+      "sensitiveInformation": true,
+      "minimumValue" : "1",
+      "valueMustBeGreaterThanMinimum": true,
+      "uniqueIdentifier":true,
+      "allowNull":false,
+      "maximumValue": "100",
+      "valueMustBeLessThanMaximum": true,
+      "defaultDesData": "Automation",
+      "defaultIsNull" : false,
+      "valueIsAMultipleOf": "5",
+      "faker": "city",
+      "enumValue": ["VN", "UK", "USA", "USD"]
+    },
+    "modelDescribeDataIntegerType":{
+      "format": "Integer - signed 32 bits",
+      "personallyIdentifiableInformation": true,
+      "sensitiveInformation": true,
+      "minimumValue" : "1",
+      "valueMustBeGreaterThanMinimum": true,
+      "uniqueIdentifier":true,
+      "allowNull":false,
+      "maximumValue": "100",
+      "valueMustBeLessThanMaximum": true,
+      "defaultDesData": "Automation",
+      "defaultIsNull" : false,
+      "valueIsAMultipleOf": "5",
+      "faker": "city",
+      "enumValue": ["VN", "UK", "USA", "USD"]
+    },
+    "modelDescribeDataNumberType":{
+      "format": "Float",
+      "personallyIdentifiableInformation": true,
+      "sensitiveInformation": true,
+      "minimumValue" : "1",
+      "valueMustBeGreaterThanMinimum": true,
+      "uniqueIdentifier":true,
+      "allowNull":false,
+      "maximumValue": "100",
+      "valueMustBeLessThanMaximum": true,
+      "defaultDesData": "Automation",
+      "defaultIsNull" : false,
+      "valueIsAMultipleOf": "5",
+      "faker": "city",
+      "enumValue": ["VN", "UK", "USA", "USD"]
+    }
+  }
+]
