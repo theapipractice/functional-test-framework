@@ -17,7 +17,6 @@ public class BasePage {
     }
 
     protected void type(WebElement element, String val) {
-        clickByJs(element);
         element.clear();
         element.sendKeys(val);
         Wait.untilJqueryIsDone(90);
@@ -126,14 +125,25 @@ public class BasePage {
 
     protected void reTypeAndTab(WebElement element, String val) {
         do {
-            element.click();
             element.clear();
-            element.sendKeys(Keys.chord(Keys.CONTROL,"a",Keys.DELETE));
+            element.sendKeys(Keys.chord(Keys.CONTROL, "a"));
+            element.sendKeys(Keys.DELETE);
+            element.sendKeys(Keys.BACK_SPACE);
             element.sendKeys(val);
-            element.sendKeys(Keys.TAB);
-        }while (!element.getText().equalsIgnoreCase(val) || !element.getAttribute("value").equalsIgnoreCase(val));
-
+            System.out.println("name : " + element.getAttribute("value"));
+        }while (!(element.getAttribute("value").compareToIgnoreCase(val) == 0) );
         Wait.untilJqueryIsDone(90);
+    }
+
+    protected void deleteAndType(WebElement element, String value){
+        int lenText = element.getAttribute("value").length();
+        for(int i = 0; i < lenText; i++){
+            element.sendKeys(Keys.ARROW_LEFT);
+        }
+        for(int i = 0; i < lenText; i++){
+            element.sendKeys(Keys.DELETE);
+        }
+        element.sendKeys(value);
     }
 
 }

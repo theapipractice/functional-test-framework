@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-04-16T06:08:05Z" name="RGA Test Automation" finished-at="2020-04-16T06:08:22Z" duration-ms="17374">
+    <groups>
+    </groups>
+    <test started-at="2020-04-16T06:08:05Z" name="Chrome_remote" finished-at="2020-04-16T06:08:22Z" duration-ms="17249">
+      <class name="suite.TestRunner">
+        <test-method is-config="true" signature="setUpClass(java.lang.String)[pri:0, instance:suite.TestRunner@b62fe6d]" started-at="2020-04-16T13:08:05Z" name="setUpClass" finished-at="2020-04-16T13:08:05Z" duration-ms="305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="rgaSea(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:suite.TestRunner@b62fe6d]" started-at="2020-04-16T13:08:05Z" name="rgaSea" description="RGA SEA" data-provider="features" finished-at="2020-04-16T13:08:21Z" duration-ms="16071" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Login Function]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rgaSea -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:suite.TestRunner@b62fe6d]" started-at="2020-04-16T13:08:21Z" name="tearDownClass" finished-at="2020-04-16T13:08:22Z" duration-ms="731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- suite.TestRunner -->
+    </test> <!-- Chrome_remote -->
+    <test started-at="2020-04-16T06:08:05Z" name="firefox_remote" finished-at="2020-04-16T06:08:22Z" duration-ms="17374">
+      <class name="suite.TestRunner">
+        <test-method is-config="true" signature="setUpClass(java.lang.String)[pri:0, instance:suite.TestRunner@add0edd]" started-at="2020-04-16T13:08:05Z" name="setUpClass" finished-at="2020-04-16T13:08:05Z" duration-ms="306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="rgaSea(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:suite.TestRunner@add0edd]" started-at="2020-04-16T13:08:05Z" name="rgaSea" description="RGA SEA" data-provider="features" finished-at="2020-04-16T13:08:21Z" duration-ms="16162" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Login Function]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rgaSea -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:suite.TestRunner@add0edd]" started-at="2020-04-16T13:08:21Z" name="tearDownClass" finished-at="2020-04-16T13:08:22Z" duration-ms="781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- suite.TestRunner -->
+    </test> <!-- firefox_remote -->
+  </suite> <!-- RGA Test Automation -->
+</testng-results>

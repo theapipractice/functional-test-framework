@@ -1,0 +1,95 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7608820,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 7516452123,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.beforeSteps(Scenario)"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "user verify field of login page - Web",
+        "description": "",
+        "id": "login-function-feature;user-verify-field-of-login-page---web",
+        "after": [
+          {
+            "result": {
+              "duration": 21118447,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 165297708,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.afterSteps(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6400177,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user opens the login page",
+            "match": {
+              "location": "LoginSteps.iOpenTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 696766526,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user checks that all fields are displayed correctly",
+            "match": {
+              "location": "LoginSteps.iEnsureThatAllFieldsAreDisplayedCorrectly()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Login Function Feature",
+    "description": "  As a user\n  I want to ensure that Login feature is working well",
+    "id": "login-function-feature",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/Logins.feature",
+    "tags": []
+  }
+]

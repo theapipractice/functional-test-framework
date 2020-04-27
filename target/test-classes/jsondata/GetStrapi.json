@@ -1,0 +1,70 @@
+[
+  {
+    "id": "abd92922-9f8e-4a48-8f49-ce568558a2f7",
+    "organization": "Gleneagles3 Kuala Lumpur",
+    "description": "Gleneagles3 Kuala Lumpur (GKL) is a hospital in Kuala Lumpur, Malaysia. The hospital was funded in 1996, and commenced its operations on 1 August 1996.",
+    "hospitalActiveStatus": true,
+    "hospitalType": null,
+    "parentHospital": null,
+    "created_at": "2020-04-09T03:47:46.237Z",
+    "updated_at": "2020-04-09T03:47:46.237Z",
+    "address": {
+      "id": "9681d4c2-e4ef-4c9b-a298-7f291d4c25fa",
+      "regionCode": "MY",
+      "locality": "Kampung Berembang",
+      "countryCode": "MY",
+      "sublocality": "Jalan Ampang",
+      "languageCode": "en",
+      "postalCode": "50450",
+      "administrativeArea": "Wilayah Persekutuan Kuala Lumpur",
+      "sortingCode": "1234",
+      "addressLines": [
+        "Block A & Block B, 282 & 286"
+      ]
+    }
+  },
+  {
+    "id": "12a49b0f-203d-48e3-8a18-d2fef472a97a",
+    "organization": "3M TEMBILAHAN, RIAU - RS",
+    "description": "3M TEMBILAHAN, RIAU - RS",
+    "hospitalActiveStatus": true,
+    "hospitalType": null,
+    "parentHospital": null,
+    "created_at": "2020-04-09T03:03:08.593Z",
+    "updated_at": "2020-04-09T03:03:08.593Z",
+    "address": {
+      "id": "39d25555-743c-417f-bcc0-7efcef645636",
+      "regionCode": null,
+      "locality": null,
+      "countryCode": "Indonesia",
+      "sublocality": null,
+      "languageCode": null,
+      "postalCode": null,
+      "administrativeArea": null,
+      "sortingCode": null,
+      "addressLines": null
+    }
+  },
+  {
+    "id": "c7029b23-815b-49a2-a216-f8e03958a882",
+    "organization": "3M TEMBILAHAN, RIAU - RS",
+    "description": "3M TEMBILAHAN, RIAU - RS",
+    "hospitalActiveStatus": true,
+    "hospitalType": null,
+    "parentHospital": null,
+    "created_at": "2020-04-10T00:58:51.691Z",
+    "updated_at": "2020-04-10T00:58:51.691Z",
+    "address": {
+      "id": "6f69c603-b909-4da5-bc61-69428517208f",
+      "regionCode": null,
+      "locality": null,
+      "countryCode": "Indonesia",
+      "sublocality": null,
+      "languageCode": null,
+      "postalCode": null,
+      "administrativeArea": null,
+      "sortingCode": null,
+      "addressLines": null
+    }
+  }
+]

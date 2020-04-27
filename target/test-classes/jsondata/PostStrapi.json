@@ -1,0 +1,26 @@
+[
+{
+  "id": "bb72f4de-eb33-4e1c-8b00-5273e1811370",
+  "organization": "Gleneagles3 Kuala Lumpur",
+  "description": "Gleneagles3 Kuala Lumpur (GKL) is a hospital in Kuala Lumpur, Malaysia. The hospital was funded in 1996, and commenced its operations on 1 August 1996.",
+  "hospitalActiveStatus": true,
+  "hospitalType": null,
+  "parentHospital": null,
+  "created_at": "2020-04-09T07:19:52.728Z",
+  "updated_at": "2020-04-09T07:19:52.728Z",
+  "address": {
+    "id": "76f12ad2-bdf6-40ed-af44-10b604367465",
+    "regionCode": "MY",
+    "locality": "Kampung Berembang",
+    "countryCode": "MY",
+    "sublocality": "Jalan Ampang",
+    "languageCode": "en",
+    "postalCode": "50450",
+    "administrativeArea": "Wilayah Persekutuan Kuala Lumpur",
+    "sortingCode": "1234",
+    "addressLines": [
+      "Block A & Block B, 282 & 286"
+    ]
+  }
+}
+]

@@ -11,7 +11,9 @@ public enum Browser {
     CHROME("gc", "chrome"),
     FIREFOX("ff", "firefox"),
     IE("ie"),
-    REMOTE("remote", "rm");
+    REMOTE("remote", "rm"),
+    SAFARI("sfr", "safari"),
+    MOBILE("mb", "mobile"),;
 
     /**
      * List of browser names supported in this Enum

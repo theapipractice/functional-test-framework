@@ -15,7 +15,7 @@ public class ModelsProvider {
         Gson gson = new Gson();
         BufferedReader bufferReader = null;
         try {
-            bufferReader = new BufferedReader(new FileReader("src/test/resources/data/Models.json"));
+            bufferReader = new BufferedReader(new FileReader("src/test/resources/jsondata/Models.json"));
             ModelEntity[] modelEntities = gson.fromJson(bufferReader, ModelEntity[].class);
             return Arrays.asList(modelEntities);
         }catch(FileNotFoundException e) {

@@ -1,50 +1,47 @@
 package rga.pages.login;
 
 import rga.pages.BasePage;
-import rga.pages.common.NotificationMessagePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BasePage {
-    private static LoginPage instance;
     public static LoginPage getInstance(){
         return new LoginPage();
     }
 
-    @FindBy(name = "user_name")
-    WebElement usernameField;
 
-    @FindBy(name = "password")
+    @FindBy(xpath = "//div[@class='v-card__title']")
+    WebElement lbHeaderLogin;
+
+    @FindBy(xpath = "//*[@id=\"input-12\"]")
+    WebElement emailField;
+
+    @FindBy(xpath = "//*[@id=\"input-15\"]")
     WebElement passwordField;
 
-    @FindBy(id = "login")
-    WebElement loginFormLocator;
-
     @FindBy(xpath = "//button[@type='submit']")
-    WebElement loginButton;
+    WebElement signInButton;
 
-    @FindBy(xpath = "//span[contains(@class,'ant-avatar-image')]")
-    WebElement successMessageLocator;
-
-    @FindBy(xpath = "//div[contains(@class,'ant-form-explain')]")
-    WebElement failureMessageLocator;
-
-    public void LoginToFlowStep(String username, String password) {
-        type(usernameField, username);
-        type(passwordField, password);
+    public void LoginToRga(String email, String password) {
+        deleteAndType(emailField, email);
+        deleteAndType(passwordField, password);
+        click(signInButton);
     }
 
-    public void submit() throws InterruptedException {
-        click(loginButton);
-        NotificationMessagePage.getInstance().isLatestVersion(10);
+    public String getHeaderLoginPage(){
+        return getText(lbHeaderLogin);
     }
 
-    public boolean successMessagePresent() {
-        return isDisplayed(successMessageLocator);
+    public boolean isEmailFieldDisplayed(){
+        return isDisplayed(emailField);
     }
 
-    public boolean failureMessagePresent() {
-        return isDisplayed(failureMessageLocator);
+    public boolean isPasswordFieldDisplayed(){
+        return isDisplayed(passwordField);
+    }
+
+    public boolean isSignInButtonDisplayed(){
+        return isDisplayed(signInButton);
     }
 
 }

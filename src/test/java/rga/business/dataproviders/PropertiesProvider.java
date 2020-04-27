@@ -15,7 +15,7 @@ public class PropertiesProvider {
         Gson gson = new Gson();
         BufferedReader bufferReader = null;
         try {
-            bufferReader = new BufferedReader(new FileReader("src/test/resources/data/Properties.json"));
+            bufferReader = new BufferedReader(new FileReader("src/test/resources/jsondata/Properties.json"));
             PropertyEntity[] propertyEntities = gson.fromJson(bufferReader, PropertyEntity[].class);
             return Arrays.asList(propertyEntities);
         }catch(FileNotFoundException e) {

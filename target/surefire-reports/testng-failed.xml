@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" thread-count="2" parallel="tests" name="Failed suite [RGA Test Automation]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="executionType" value="remote"/>
+  <parameter name="browserType" value="ff"/>
+  <test name="Chrome_remote">
+    <parameter name="executionType" value="remote"/>
+    <parameter name="browserType" value="gc"/>
+    <classes>
+      <class name="suite.TestRunner"/>
+    </classes>
+  </test> <!-- Chrome_remote -->
+  <test name="firefox_remote">
+    <parameter name="executionType" value="remote"/>
+    <parameter name="browserType" value="ff"/>
+    <classes>
+      <class name="suite.TestRunner"/>
+    </classes>
+  </test> <!-- firefox_remote -->
+</suite> <!-- Failed suite [RGA Test Automation] -->

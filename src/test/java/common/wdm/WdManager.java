@@ -1,5 +1,6 @@
 package common.wdm;
 
+import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -57,6 +58,15 @@ public class WdManager {
      * @param driver
      */
     public static void set(final WebDriver driver) {
+        if (wdm.get() != null) {
+            dismissWD();
+        }
+        wdm.set(driver);
+        waitManager.set(new WebDriverWait(wdm.get(), 30));
+        ajaxEle.set(new AjaxElementLocatorFactory(wdm.get(), 5));
+    }
+
+    public static void set(final AppiumDriver driver) {
         if (wdm.get() != null) {
             dismissWD();
         }

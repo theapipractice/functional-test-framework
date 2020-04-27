@@ -1,7 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="BDD Test Suite" verbose="1" parallel="tests" thread-count="1" configfailurepolicy="continue">
-    <test name="Login and Update Profile Test" annotations="JDK" preserve-order="true">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="RGA Test Automation" parallel="methods" configfailurepolicy="continue" thread-count="3">
+    <test name="Chrome_remote">
+        <parameter name="browserType" value="gc"/>
+        <parameter name="executionType" value="remote"/>
+        <classes>
+            <class name="suite.TestRunner"/>
+        </classes>
+    </test>
+    <test name="firefox_remote">
+        <parameter name="browserType" value="ff"/>
+        <parameter name="executionType" value="remote"/>
         <classes>
             <class name="suite.TestRunner"/>
         </classes>

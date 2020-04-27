@@ -12,6 +12,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 
 import java.net.URL;
 
@@ -60,6 +62,10 @@ public class WDFactory {
                 webDriver = options instanceof ChromeOptions ? new ChromeDriver((ChromeOptions) options) : new ChromeDriver();
                 webDriver.manage().window().maximize();
                 break;
+            case SAFARI:
+                webDriver = options instanceof SafariOptions ? new SafariDriver((SafariOptions) options) : new SafariDriver();
+                webDriver.manage().window().maximize();
+                break;
             default:
                 WebDriverManager.chromedriver().setup();
                 webDriver = options instanceof ChromeOptions ? new ChromeDriver((ChromeOptions) options) : new ChromeDriver();
@@ -89,6 +95,6 @@ public class WDFactory {
      * @return Config
      */
     public static Config getConfig() {
-        return WebDriverManager.config();
+        return WebDriverManager.globalConfig();
     }
 }

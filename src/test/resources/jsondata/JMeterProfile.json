@@ -1,0 +1,55 @@
+[
+  {
+    "folderContainerName":"GoogleTread",
+    "testPlanName": "Lakshay",
+    "method": "GET",
+    "fileName": "simpleProject_generated.jmx",
+    "url": "freetoolonline.com",
+    "port": 80,
+    "path": "/",
+    "loops": 100,
+    "numThreads": 1000,
+    "ramUps": 10,
+    "duration": 120,
+    "nameOfThreadGroup":"Thread Group",
+    "numberOfThreadGroup":1
+  },
+  {
+    "folderContainerName":"MultiThreadGroup",
+    "testPlanName": "MultiThreadGroup",
+    "method": "GET",
+    "fileName": "simpleProject_generated.jmx",
+    "url": {
+      "link1": "www.google.com",
+      "link2": "www.vnexpress.net",
+      "link3": "www.bongdaplus.vn",
+      "link4": "www.24h.com.vn",
+      "link5": "www.kenh14.vn"
+    },
+    "port": 80,
+    "path": "/",
+    "loops": {
+      "loops1": 1,
+      "loops2": 1,
+      "loops3": 1,
+      "loops4": 1,
+      "loops5": 1
+    },
+    "numThreads": {
+      "numThread1": 5,
+      "numThread2": 10,
+      "numThread3": 15,
+      "numThread4": 20,
+      "numThread5": 25
+    },
+    "ramUps": {
+      "ramUp1": 10,
+      "ramUp2": 15,
+      "ramUp3": 20,
+      "ramUp4": 25,
+      "ramUp5": 30
+    },
+    "nameOfThreadGroup":"Thread Group",
+    "numberOfThreadGroup":5
+  }
+]

@@ -15,7 +15,7 @@ public class UsersProvider {
         Gson gson = new Gson();
         BufferedReader bufferReader = null;
         try {
-            bufferReader = new BufferedReader(new FileReader("src/test/resources/data/Users.json"));
+            bufferReader = new BufferedReader(new FileReader("src/test/resources/jsondata/Users.json"));
             UsersEntity[] usersEntities = gson.fromJson(bufferReader, UsersEntity[].class);
             return Arrays.asList(usersEntities);
         }catch(FileNotFoundException e) {
