@@ -1,8 +1,8 @@
 package suite.stepdefs;
 
 import cucumber.api.java.en.Then;
-import rga.pages.home.HomePage;
-import rga.utils.FlowChart;
+import flowstep.pages.home.HomePage;
+import flowstep.utils.FlowChart;
 
 public class HomeSteps {
 

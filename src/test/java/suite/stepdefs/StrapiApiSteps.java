@@ -8,9 +8,9 @@ import io.cucumber.datatable.DataTable;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.Assert;
-import rga.utils.JsonDataReader;
-import rga.utils.Parser;
-import rga.utils.RestUtil;
+import flowstep.utils.JsonDataReader;
+import flowstep.utils.Parser;
+import flowstep.utils.RestUtil;
 import java.util.HashMap;
 import java.util.Map;
 

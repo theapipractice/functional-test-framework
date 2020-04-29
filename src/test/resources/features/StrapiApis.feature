@@ -22,7 +22,7 @@ Feature: Hospital Apis
     And   user checks the get response body and code "<statusCode>"
     Examples:
       |limit	|organization				| statusCode  |
-      |  2    |3M TEMBILAHAN, RIAU - RS   | 	200		  |
+      |  2      |3M TEMBILAHAN, RIAU - RS   | 	200		  |
 
   @Post
   Scenario: Verify the user can create new Hospital - Api

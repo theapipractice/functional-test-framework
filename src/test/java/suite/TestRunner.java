@@ -1,13 +1,12 @@
 package suite;
 
-import common.config.Config;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.PickleEventWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 import org.testng.annotations.*;
-import rga.business.datacontext.TestContext;
-import rga.business.enums.Context;
+import flowstep.business.datacontext.TestContext;
+import flowstep.business.enums.Context;
 
 @CucumberOptions(
         dryRun = false,//Skip execution of glue code.

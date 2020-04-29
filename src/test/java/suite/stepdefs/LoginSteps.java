@@ -8,11 +8,11 @@ import cucumber.api.java.en.Then;
 import io.cucumber.datatable.DataTable;
 import io.restassured.response.Response;
 import org.testng.Assert;
-import rga.pages.common.MessagePage;
-import rga.pages.home.HomePage;
-import rga.pages.login.LoginPage;
-import rga.utils.FlowChart;
-import rga.utils.ZapSecurity;
+import flowstep.pages.common.MessagePage;
+import flowstep.pages.home.HomePage;
+import flowstep.pages.login.LoginPage;
+import flowstep.utils.FlowChart;
+import flowstep.utils.ZapSecurity;
 
 public class LoginSteps {
     private Response response = null;

@@ -14,18 +14,18 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import rga.business.datacontext.TestContext;
-import rga.business.entities.DeviceLists;
-import rga.business.enums.Context;
-import rga.utils.Common;
-import rga.utils.FlowChart;
+import flowstep.business.datacontext.TestContext;
+import flowstep.business.entities.DeviceLists;
+import flowstep.business.enums.Context;
+import flowstep.utils.Common;
+import flowstep.utils.FlowChart;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.openqa.selenium.WebElement;
-import rga.utils.Parser;
+import flowstep.utils.Parser;
 
 public class ServiceHooks {
     @Before(order = 0)

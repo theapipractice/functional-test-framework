@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="rga" />
+        <module name="FlowStep" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="rga" target="8" />
+      <module name="FlowStep" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
